@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Dark Retro Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    --background: 230 15% 8%;
+    --foreground: 220 25% 95%;
+    
+    --card: 230 15% 10%;
+    --card-foreground: 220 25% 95%;
+    
+    --popover: 230 15% 10%;
+    --popover-foreground: 220 25% 95%;
+    
+    --primary: 280 100% 70%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 200 100% 60%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 230 15% 15%;
+    --muted-foreground: 220 20% 65%;
+    
+    --accent: 45 100% 65%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 230 15% 20%;
+    --input: 230 15% 12%;
+    --ring: 280 100% 70%;
+    
+    --radius: 12px;
+    
+    --sidebar-background: 230 15% 10%;
+    --sidebar-foreground: 220 25% 95%;
+    --sidebar-primary: 280 100% 70%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 230 15% 15%;
+    --sidebar-accent-foreground: 220 25% 95%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 280 100% 70%;
+    
+    /* Modern Retro theme variables */
+    --retro-background: 230 15% 8%;
+    --retro-surface: 230 15% 10%;
+    --retro-surface-alt: 230 15% 12%;
+    --retro-border: 230 15% 20%;
+    --retro-border-light: 230 20% 25%;
+    --retro-purple: 280 100% 70%;
+    --retro-cyan: 200 100% 60%;
+    --retro-pink: 320 100% 75%;
+    --retro-yellow: 45 100% 65%;
+    --retro-green: 150 100% 60%;
+
+    /* Neon Gradients */
+    --gradient-neon-purple: linear-gradient(135deg, hsl(280, 100%, 70%) 0%, hsl(320, 100%, 75%) 100%);
+    --gradient-neon-cyan: linear-gradient(135deg, hsl(200, 100%, 60%) 0%, hsl(180, 100%, 65%) 100%);
+    --gradient-neon-sunset: linear-gradient(135deg, hsl(280, 100%, 70%) 0%, hsl(45, 100%, 65%) 50%, hsl(320, 100%, 75%) 100%);
+    --gradient-dark-surface: linear-gradient(145deg, hsl(230, 15%, 12%) 0%, hsl(230, 15%, 8%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+    /* Neon Shadows */
+    --shadow-neon-purple: 0 0 20px hsl(280, 100%, 70%), 0 0 40px hsl(280, 100%, 70%), 0 0 60px hsl(280, 100%, 70%);
+    --shadow-neon-cyan: 0 0 20px hsl(200, 100%, 60%), 0 0 40px hsl(200, 100%, 60%), 0 0 60px hsl(200, 100%, 60%);
+    --shadow-neon-pink: 0 0 20px hsl(320, 100%, 75%), 0 0 40px hsl(320, 100%, 75%), 0 0 60px hsl(320, 100%, 75%);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    --shadow-elevated: 0 20px 40px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .dark {
+    --background: 230 20% 5%;
+    --foreground: 220 25% 98%;
+    
+    --card: 230 20% 8%;
+    --card-foreground: 220 25% 98%;
+    
+    --popover: 230 20% 8%;
+    --popover-foreground: 220 25% 98%;
+    
+    --primary: 280 100% 75%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 200 100% 65%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 230 20% 12%;
+    --muted-foreground: 220 25% 70%;
+    
+    --accent: 45 100% 70%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 230 20% 20%;
+    --input: 230 20% 12%;
+    --ring: 280 100% 75%;
+    
+    --retro-purple: 280 100% 75%;
+    --retro-cyan: 200 100% 65%;
+    --retro-pink: 320 100% 80%;
+    --retro-yellow: 45 100% 70%;
+    --retro-green: 150 100% 65%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
